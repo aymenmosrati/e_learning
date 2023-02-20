@@ -1,0 +1,86 @@
+@use "../../assets/scss/utilities/" as *;
+
+.login-register-page {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  .login-design {
+    max-width: 700px;
+  }
+
+  .login-form {
+    width: calc(100vw - 700px);
+    height: 611px;
+    display: flex;
+    justify-content: center;
+
+    .block-form {
+      min-width: 331px;
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .login-form-title {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        display: flex;
+        justify-content: center;
+      }
+      .login-register-link {
+        width: 329px;
+        height: 59px;
+        background: rgba(73, 187, 189, 0.6);
+        border-radius: 33px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        .link-login {
+          width: 146px;
+          height: 40px;
+          background: #49bbbd;
+          border-radius: 33px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: -50px;
+          margin-right: 45px;
+        }
+        // .link-register {
+        //   width: 146px;
+        //   height: 40px;
+        //   background: #49bbbd;
+        //   border-radius: 33px;
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   margin-left: 10px;
+        // }
+      }
+      .login-form-description {
+        font-weight: 400;
+        font-size: 16px;
+        color: #5b5b5b;
+      }
+      .remember-forget-pass {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .remember-me {
+          display: flex;
+          align-items: center;
+        }
+        .forget-password {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
