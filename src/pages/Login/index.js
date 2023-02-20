@@ -21,10 +21,10 @@ const index = () => {
           <span className="link-login">Login</span>
           <span className="link-register">Register</span>
         </div>
-        <span className="login-form-description">
+        <div className="login-form-description">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
-        </span>
+        </div>
         <div className="login-form-name">
           <Label className="label" label="User name" />
           <Input
@@ -48,7 +48,9 @@ const index = () => {
           </span>
           <span className="forget-password">Forgot password?</span>
         </div>
+        <div className="btn-login">
         <Button text="Login" className="btn-global" />
+        </div>
         </form>
       </div>
     </div>
